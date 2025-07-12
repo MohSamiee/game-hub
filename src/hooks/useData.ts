@@ -8,7 +8,7 @@ interface FetchResponse<T> {
 }
 
 interface Props {}
-const useGames = <T>(
+const useData = <T>(
   endpoint: string,
   requestConfig?: AxiosRequestConfig,
   deps?: any[]
@@ -37,10 +37,9 @@ const useGames = <T>(
         });
       return () => controller.abort();
     },
-
     deps ? [...deps] : []
   );
 
   return { data, error, isLoading };
 };
-export default useGames;
+export default useData;
