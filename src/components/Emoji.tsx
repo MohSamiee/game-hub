@@ -1,9 +1,7 @@
-import React from "react";
-import { GameQuery } from "../App";
+import { Image, ImageProps } from "@chakra-ui/react";
 import bullsEye from "../assets/bulls-eye.webp";
 import meh from "../assets/meh.webp";
 import thumbsUp from "../assets/thumbs-up.webp";
-import { Image, ImageProps } from "@chakra-ui/react";
 
 interface Props {
   rating: number;

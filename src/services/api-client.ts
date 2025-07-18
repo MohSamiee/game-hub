@@ -1,4 +1,5 @@
 import axios from "axios";
+
 export interface FetchResponse<T> {
   results: T[];
   count: number;
