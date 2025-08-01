@@ -6,6 +6,7 @@ export interface FetchResponse<T> {
 
 export interface FetchResponse<T> {
   results: T[];
+  next?: string | null;
   count: number;
 }
 
